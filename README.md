@@ -3,7 +3,7 @@ This is an open-source containerized implementation for the excelent overthewire
 meant to deploy on airgapped environments for training, or just for fun.
 
 ## Exercies Implemented
-
+- bandit0
 
 ## Basic Explenation
 Each exercise has a different user and directory and so they're all set-up at build time,
