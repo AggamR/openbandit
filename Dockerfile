@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add --no-cache openssh bash vim
+RUN apk add --no-cache openssh bash vim file
 
 # copy exercise setups
 COPY ./setups /setups

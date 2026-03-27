@@ -1,5 +1,5 @@
 # OpenBandit
-This is an open-source containerized implementation for the excelent overthewire's bandit exercises,
+This is an open-source containerized implementation for the excelent overthewire's bandit exercises (as it is in early 2026),
 meant to deploy on airgapped environments for training, or just for fun.
 
 ## Exercies Implemented
