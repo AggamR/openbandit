@@ -11,9 +11,14 @@ meant to deploy on airgapped environments for training, or just for fun.
 - bandit4_5
 - bandit5_6
 - bandit6_7
+- bandit7_8
 
 ## Basic Explenation
 Each exercise has a different user and directory and so they're all set-up at build time in `setup.sh`,
 and each of the exercises are also set-up in scripts, under the `setups/` directory.
 
 They're all sourced in `setup.sh` - so that they could use the `passwords` array. 
+
+## Notes
+- `bandit7_8` and other randomness-heavy (on setup) exercises may be set to generate low numbers
+    thus making the exercise ridicolously easy. keep this in mind if building for training purpuses.

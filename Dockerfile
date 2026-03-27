@@ -2,7 +2,7 @@ FROM ubuntu:noble
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update
-RUN apt install -y vim adduser
+RUN apt install -y vim adduser wamerican
 
 # copy exercise setups
 COPY ./setups /setups

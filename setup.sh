@@ -13,10 +13,6 @@ for i in {1..34}; do
   echo "bandit${i}:${passwords[$i]}" | chpasswd  # actually change passwords
 done
 
-# take ownership over all files
-chown -R root:root /home
-chmod -R 644 /home
-
 # run all setups - source so that they could use `passwords[]`
 for f in  /setups/*.sh; do
   source $f
