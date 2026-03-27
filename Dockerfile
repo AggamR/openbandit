@@ -1,6 +1,8 @@
-FROM alpine:latest
+FROM ubuntu:noble
 
-RUN apk add --no-cache openssh bash vim file
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt update
+RUN apt install -y vim adduser
 
 # copy exercise setups
 COPY ./setups /setups
