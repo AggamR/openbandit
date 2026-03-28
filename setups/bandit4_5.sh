@@ -5,4 +5,3 @@ for i in {1..9}; do
 done
 
 echo "${passwords[5]}" > "/home/bandit4/inhere/-file07"
-
