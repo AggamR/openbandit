@@ -17,9 +17,12 @@ for i in {1..19}; do
     # create random file sized at max ~3.2KB
     dd if=/dev/urandom of="$file_path" bs=1 count=$(( $RANDOM / 10 ))
     # assign random permission to file
-    chmod "$(( $RANDOM %8 ))$(( $RANDOM %8 ))$(( $RANDOM %8 ))" "$file_path"
+    chmod "$(( $RANDOM % 8 ))$(( $RANDOM % 8 ))$(( $RANDOM % 8 ))" "$file_path"
   done
 done
+
+# make them all readable
+chmod -R +r /home/bandit5/inhere/
 
 # now, make real password file
 real_file=/home/bandit5/inhere/maybeinhere07/-file1
@@ -28,5 +31,4 @@ password_length=${#passwords[6]}
 full_length=1033  # variable for readbility, fuck magic numbers
 # create file with nulls and the password
 echo "${passwords[6]}$(printf " %*s" $((full_length - password_length - 2)))" > "$real_file"
-chmox +r "$real_file"  # make readable by all 
 chmod -x "$real_file"  # make file not executable
