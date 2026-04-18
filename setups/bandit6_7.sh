@@ -1,4 +1,5 @@
 file_path=/var/lib/dpkg/info/bandit7.password
+
 mkdir -p /var/lib/dpkg/info 2&> /dev/null  # incase this isn't running on debian
 
 # file length = full length (33) - password_length

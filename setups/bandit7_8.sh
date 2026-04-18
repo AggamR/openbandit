@@ -1,6 +1,6 @@
-words=/usr/share/dict/words
 file_path=/home/bandit7/data.txt
 
+words=/usr/share/dict/words
 line_count=100
 correct_word=millionth
 

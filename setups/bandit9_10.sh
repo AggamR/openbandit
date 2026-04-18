@@ -1,6 +1,6 @@
 file_path=/home/bandit9/data.txt
-line_count=75
 
+line_count=75
 file_content=""
 
 # get 3 random numbers in the range, then sort them w/ delimeter $IFS, and set *that* as the array 
