@@ -14,6 +14,8 @@ meant to deploy on airgapped environments for training, or just for fun.
 - bandit7_8
 - bandit8_9
 - bandit9_10
+- bandit10_11
+- bandit11_12
 
 ## Basic Explenation
 Each exercise has a different user and directory and so they're all set-up at build time in `setup.sh`,
